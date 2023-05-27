@@ -467,6 +467,34 @@ var shareasaleSSCID=shareasaleGetParameterByName("sscid");function shareasaleSet
             font-weight: bold;
         }
 
+
+        .header-slogan {
+            position: absolute;
+            top: 10px;
+            left: 80px;
+        }
+
+        @media (max-width: 768px) {
+            a.header-slogan {
+            top: 5px;
+            left: 15px;
+            }
+        }
+
+        .msg-link {
+            position: absolute;
+            top: 25px;
+            right: 240px;
+        }
+
+        @media (max-width: 768px) {
+            a.msg-link {
+            top: 5px;
+            right: 30px;
+            }
+        }
+
+        
         .whatsapp-link {
             position: absolute;
             top: 25px;
@@ -475,11 +503,10 @@ var shareasaleSSCID=shareasaleGetParameterByName("sscid");function shareasaleSet
 
         @media (max-width: 768px) {
             a.whatsapp-link {
-            top: 10px;
-            right: 10px;
+            top: 5px;
+            right: 5px;
             }
         }
-
     </style>
 
 </head>
@@ -504,8 +531,8 @@ var shareasaleSSCID=shareasaleGetParameterByName("sscid");function shareasaleSet
 
     <body>
         <a style="position:absolute;top:17px;left:10px;" href="https://lincolnlim80.github.io/ops3-testOnline"><img alt="" src="./img/icon-house6.png"></a>
-        <p style="position:absolute;top:2px;left:100px;" class = "u-font-montserrat-copy">Your specialist in condo purchases...</p>
-        <a style="position:absolute;top:25px;right:240px;" href="#" onclick="showGetInTouch()"><img alt="" src="./img/icon-getintouch5a.png"></a>
+        <p class = "header-slogan u-font-montserrat-copy">Your specialist in condo purchases...</p>
+        <a class="msg-link" href="#" onclick="showGetInTouch()"><img alt="" src="./img/icon-getintouch5a.png"></a>
         <a class="whatsapp-link" href="https://wa.me/6588171953?text=I'm%20interested%20to%20hear%20more."><img alt="" src="./img/icon-whatsapp1a.png"></a>
     </body>
 
